@@ -10,7 +10,7 @@ def start(update, context):
     )
     
     update.message.reply_text(
-        text='haz clic en un boton',
+        'haz clic en un boton',
         reply_markup=InlineKeyboardMarkup([
             [button1]
             ])
