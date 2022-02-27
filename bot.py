@@ -6,9 +6,20 @@ INPUT_TEXT = 0
 
 def start(update, context):
     button1 = InlineKeyboardButton(
-        text='si',url= None)
-    #button2 = InlineKeyboardButton( text='no')
-    update.message.reply_text(text='haz clic en un boton', reply_markup=InlineKeyboardButton([button1]))
+        text='si',
+        url= None
+    )
+    button2 = InlineKeyboardButton(
+        text='no',
+        url= None
+        )
+    update.message.reply_text(
+        text='haz clic en un boton',
+        reply_markup=InlineKeyboardButton([
+            [button1],
+            [button2]
+            ])
+    )
 
 if __name__ == '__main__':
     
