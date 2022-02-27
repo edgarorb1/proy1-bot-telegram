@@ -5,12 +5,12 @@ INPUT_TEXT = 0
 
 def start(update, context):
     button1 = InlineKeyboardButton(
-        text='si',
-        url= None
+        text='sobre el autor',
+        url='https://lugofev.com'
     )
     
     update.message.reply_text(
-        'haz clic en un boton',
+        text='haz clic en un boton',
         reply_markup=InlineKeyboardMarkup([
             [button1]
             ])
