@@ -1,4 +1,3 @@
-from cgitb import text
 from telegram.ext import Updater, CommandHandler
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton 
 
