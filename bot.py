@@ -8,7 +8,7 @@ def start(update, context):
     update.message.reply_text('hola')
     button1 = InlineKeyboardButton( text='si')
     button2 = InlineKeyboardButton( text='no')
-    update.message.reply_text(text='haz clic en un boton', reply_markup=InlineKeyboardButton([button1],[button2]))
+    update.message.reply_text(text='haz clic en un boton', reply_markup=InlineKeyboardButton([button1]))
 
 if __name__ == '__main__':
     
