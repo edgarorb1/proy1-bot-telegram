@@ -1,17 +1,31 @@
+from cgitb import text
 from telegram.ext import Updater, CommandHandler
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import InlineKeyboardMarkup, InlineKeyboardButton 
 
 INPUT_TEXT = 0
 
 def start(update, context):
-   
-    update.message.reply_text('haz clic en un boton')
+    button1 = InlineKeyboardButton(
+        text='si',
+        url= None
+    )
+    button2 = InlineKeyboardButton(
+        text='no',
+        url= None
+        )
+    update.message.reply_text(
+        text='haz clic en un boton',
+        reply_markup=InlineKeyboardMarkup([
+            [button1],
+            [button2]
+            ])
+    )
 
 if __name__ == '__main__':
     
     updater = Updater(token='5246990550:AAEdax6SS8kbL385Ttift8HvfArdLhX6W8w', use_context=True)
 
     dp = updater.dispatcher
-    dp.add_handler( CommandHandler('start',start))
+    dp.add_handler( CommandHandler('start', start))
     updater.start_polling()
     updater.idle()
