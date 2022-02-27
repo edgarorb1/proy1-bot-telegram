@@ -9,15 +9,11 @@ def start(update, context):
         text='si',
         url= None
     )
-    button2 = InlineKeyboardButton(
-        text='no',
-        url= None
-        )
+    
     update.message.reply_text(
         text='haz clic en un boton',
         reply_markup=InlineKeyboardMarkup([
-            [button1],
-            [button2]
+            [button1]
             ])
     )
 
