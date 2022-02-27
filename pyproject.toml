@@ -5,7 +5,7 @@ description = ""
 authors = ["Carlos Lugones <contact@lugodev.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 python-telegram-bot = "^13.0"
 qrcode = "^6.1"
 pillow = "^7.2.0"
