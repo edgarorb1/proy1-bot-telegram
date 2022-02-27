@@ -5,9 +5,9 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 INPUT_TEXT = 0
 
 def start(update, context):
-    update.message.reply_text('hola')
-    button1 = InlineKeyboardButton( text='si')
-    button2 = InlineKeyboardButton( text='no')
+    button1 = InlineKeyboardButton(
+        text='si',url= None)
+    #button2 = InlineKeyboardButton( text='no')
     update.message.reply_text(text='haz clic en un boton', reply_markup=InlineKeyboardButton([button1]))
 
 if __name__ == '__main__':
