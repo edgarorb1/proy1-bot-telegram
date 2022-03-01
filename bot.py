@@ -28,7 +28,7 @@ salto = '\n'
 def start(update, context):
     update.message.reply_text("Cuestionario de validación para ingreso seguro")
     update.message.reply_text("Istrucciones\nResponda las siguientes 7 preguntas con SI o NO")
-    update.message.reply_text("Accede a las preguntas con /numero de la pregunta por ejemplo para la pregunta 1 escribe /1")
+    update.message.reply_text("Accede a las preguntas \n/1\n/2\n/3\n/4\n/5\n/6\n/7")
     
 def pregunta1(update, context):
     update.message.reply_text("¿Tiene fiebre?")
