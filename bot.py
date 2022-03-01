@@ -197,7 +197,5 @@ if __name__ == '__main__':
     states={INPUT_TEXT3: [MessageHandler(Filters.text, input_text7)]},
     fallbacks=[]))
 
-
-
     updater.start_polling()
     updater.idle()
